@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+	<h3>Example:</h3>
+	var example = 'hello world'.capitalizeFirst();
+
+	<h3>Output:</h3>
+	<script>
+		String.prototype.capitalizeFirst = function() {
+		    return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+		}
+
+		var example = 'hello world'.capitalizeFirst();
+
+		document.write(example);
+	</script>
+</body>
+</html> 
